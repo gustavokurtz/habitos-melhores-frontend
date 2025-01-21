@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const fetchHabits = async () => {
       try {
-        const response = await fetch("http://localhost:3000/habits/today");
+        const response = await fetch("https://habitosapi.shop/habits/today");
         const data = await response.json();
         setHabits(data);
       } catch (error) {
